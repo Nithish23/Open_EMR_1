@@ -8,8 +8,9 @@ Launch Browser
     Open Browser      browser=chrome        executable_path=${EXECDIR}${/}driver${/}chromedriver.exe
     Maximize Browser Window
     Set Selenium Implicit Wait    30s
+    Set Screenshot Directory    ${EXECDIR}${/}screenshot
     Go To    url=https://demo.openemr.io/b/openemr
 
 End Browser
-    Capture Page Screenshot
+   # Capture Page Screenshot - comment when Screenshot is not req.
     Close Browser
