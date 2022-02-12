@@ -4,8 +4,8 @@ Documentation      This suit file handles all the test case related to the
 Library     SeleniumLibrary
 Resource    ../base/common_functionality.resource
 
-Test Setup      Launch Browser
-Test Teardown   End Browser
+Test Setup       Launch Browser
+Test Teardown     End Browser
 
 Test Template       Verify Invalid Credential Template
 *** Comments ***
@@ -13,6 +13,9 @@ Create a template and pass the test methods
 John, john123, Dutch, Invalid username or password
 peter, peter123, Danish, Invalid username or password
 Mark, Mark123, Greek, Invalid username or password
+
+TO trigger the one test case
+robot -t "TC1" login_suite/verify_invalid_credentials_suite.robot
 
 *** Test Cases ***
 TC1     John        john123         Dutch       Invalid username or password
